@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Google AppSheet</title>
+
+    <style>
+        :root {
+            --bg: #f7f8fb;
+            --card: #fff;
+            --muted: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, Pretendard, sans-serif;
+            background: var(--bg);
+            color: #111;
+        }
+
+        header {
+            background: #f3f3f3;
+            padding: 26px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 18px;
+        }
+
+        nav.toc {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        nav.toc a {
+            background: #e5e7eb;
+            border: 1px solid #d1d5db;
+            padding: 6px 10px;
+            border-radius: 8px;
+            color: #111;
+            text-decoration: none;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        nav.toc a:hover {
+            background: #d1d5db;
+        }
+
+        nav.toc a.active {
+            background: #cbd5e1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        aside {
+            position: sticky;
+            top: 20px;
+            align-self: start;
+            height: fit-content;
+        }
+
+        .search-box {
+            width: 100%;
+            background: white;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        .search-results {
+            margin-top: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .search-results a {
+            background: #e5e7eb;
+            border: 1px solid #d1d5db;
+            padding: 6px 10px;
+            border-radius: 8px;
+            color: #111;
+            text-decoration: none;
+            cursor: pointer;
+            user-select: none;
+            display: inline-block;
+            width: fit-content;
+        }
+
+        .search-results a:hover {
+            background: #d1d5db;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            padding: 20px 0;
+        }
+
+        @media(max-width:880px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav.toc {
+                display: none;
+            }
+        }
+
+        .card.collapsed>*:not(h2) {
+            display: none;
+        }
+
+        .card h2 {
+            cursor: pointer;
+        }
+
+        ul li ul {
+            display: none;
+            margin-left: 16px;
+            padding-left: 10px;
+            border-left: 1px solid #ddd;
+        }
+
+        ul li.open>ul {
+            display: block;
+        }
+
+        ul li {
+            cursor: pointer;
+            margin: 4px 0;
+            padding: 2px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>Google AppSheet 튜토리얼</h1>
+
+            <nav class="toc">
+                <a data-target="Data">Data</a>
+                <a data-target="Views">Views</a>
+                <a data-target="Actions">Actions</a>
+                <a data-target="Security">Security</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrap grid">
+        <aside>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="검색어를 입력하세요...">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </aside>
+
+        <main>
+
+            <section id="Data" class="card collapsed">
+                <h2>Data</h2>
+                <p>1) 좌측 "Data" 버튼 클릭<br>
+                    2) 좌측 좌측 "+" 버튼 클릭<br>
+                    3) datasource 추가<br>
+                    4) Data 설정</p>
+                <ul>
+                    <li>
+                        Data
+                        <ul>
+                            <li>NAME: 데이터 이름 설정</li>
+                            <li>TYPE: 데이터 유형 설정</li>
+                            <li>KEY?: 고유 식별자 선택</li>
+                            <li>LABEL?: 대표 표시자 선택</li>
+                            <li>FORMULA: 계산 수식 설정</li>
+                            <li>SHOW?: 화면 표시 여부 선텍</li>
+                            <li>EDITABLE?: 수정 가능 여부 선택</li>
+                            <li>REQUIRE?: 필수 입력 여부 선택</li>
+                            <li>INITIAL VALUE: 기본값 설정</li>
+                            <li>DISPLAY NAME: 화면 표시 이름 설정</li>
+                            <li>DESCRIPTION: 데이터 설명 설정</li>
+                            <li>SEARCH?: 검색 가능 여부 선택</li>
+                            <li>SCAN?: 스캔 사용 여부 선택</li>
+                            <li>NFC?: NFC 사용 여부 선택</li>
+                            <li>PII?: 개인정보 여부 선택</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="Views" class="card collapsed">
+                <h2>Views</h2>
+                <p>1) 좌측 "Views" 버튼 클릭<br>
+                    2) 좌측 "+" 버튼 클릭<br>
+                    3) View 생성<br>
+                    4) View 설정</p>
+                <ul>
+                    <li>
+                        Views
+                        <ul>
+                            <li>PRIMARY NAVIGATION: 하단 메뉴 뷰 추가</li>
+                            <li>MENU NAVIGATION: 사이드 메뉴 뷰 추가</li>
+                            <li>REFERENCE VIEWS: 참조용 뷰 추가</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        View
+                        <ul>
+                            <li>View name: 뷰 이름 설정</li>
+                            <li>For this data: 연결된 테이블 설정</li>
+                            <li>View type: 뷰 디자인 설정</li>
+                            <li>Position: 뷰 위치 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        View Options
+                        <ul>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Display
+                        <ul>
+                            <li>Icon: 표시 아이콘 설정</li>
+                            <li>Display name: 표시 이름 설정</li>
+                            <li>Show if: 표시 조건 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Behavior
+                        <ul>
+                            <li>Event Actions: 특정 이벤트에 따라 실행되는 액션 설정</li>
+                            <li>App link: 뷰 링크</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Documentation
+                        <ul>
+                            <li>Descriptive comment: 뷰 설명 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="Actions" class="card collapsed">
+                <h2>Actions</h2>
+                <p>1) 좌측 "Actions" 버튼 클릭<br>
+                    2) 좌측 "+" 버튼 클록<br>
+                    3) Action 생성<br>
+                    4) Action 설정</p>
+                <ul>
+                    <li>
+                        Action
+                        <ul>
+                            <li>Action name: 액션 이름 설정</li>
+                            <li>For a record of this table: 대상 테이블 설정</li>
+                            <li>Do this: 실행 동작 설정</li>
+                            <li>Set these columns: 데이터 계산 수식 설정</li>
+                            <li>Position: 액션 위치 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Display
+                        <ul>
+                            <li>Display name: 표시 이름 설정</li>
+                            <li>Action icon: 표시 아이콘 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Behavior
+                        <ul>
+                            <li>Only if this condition is true: 실행 조건 설정</li>
+                            <li>Needs confirmation?: 사용자 확인 여부 선택</li>
+                            <li>Confirmation Message: 사용자 확인 메시지 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Advanced
+                        <ul>
+                            <li>Inputs: 사용자 입력값 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Documentation
+                        <ul>
+                            <li>Descriptive comment: 액션 설명 설정</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            </section>
+
+            <section id="Security" class="card collapsed">
+                <h2>Security</h2>
+                <p>1) 좌측 "Security" 버튼 클릭<br>
+                    2) table 선택<br>
+                    3) Security 설정</p>
+                <ul>
+                    <li>
+                        Security filters
+                        <ul>
+                            <li>Security filter: 필터 조건 설정</li>
+                            <li>Access mode: 필터 대상 선택</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <small>Google AppSheet 튜토리얼</small>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll(".toc a");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+
+                const id = link.dataset.target;
+                const section = document.getElementById(id);
+
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    setActiveImage(id);
+                }
+
+                navLinks.forEach(a => a.classList.remove("active"));
+                link.classList.add("active");
+            });
+        });
+
+        document.querySelectorAll(".card h2").forEach(title => {
+            title.addEventListener("click", () => {
+                const card = title.parentElement;
+                card.classList.toggle("collapsed");
+            });
+        });
+
+        document.querySelectorAll("ul li").forEach(li => {
+            li.addEventListener("click", e => {
+                if (!li.querySelector("ul")) return;
+
+                e.stopPropagation();
+                li.classList.toggle("open");
+            });
+        });
+
+        const searchInput = document.getElementById("searchInput");
+        const searchResults = document.getElementById("searchResults");
+
+        // 모든 텍스트 노드를 수집하는 함수
+        function extractText(element) {
+            let text = "";
+            const walker = document.createTreeWalker(
+                element,
+                NodeFilter.SHOW_TEXT,
+                null
+            );
+            let node;
+            while ((node = walker.nextNode())) {
+                text += node.textContent.trim() + " ";
+            }
+            return text.toLowerCase();
+        }
+
+        searchInput.addEventListener("input", () => {
+            const keyword = searchInput.value.trim().toLowerCase();
+            searchResults.innerHTML = "";
+
+            if (!keyword) return;
+
+            document.querySelectorAll(".card").forEach(card => {
+                const fullText = extractText(card); // 모든 요소의 텍스트 수집
+
+                if (fullText.includes(keyword)) {
+                    const id = card.id;
+                    const navBtn = document.querySelector(`.toc a[data-target="${id}"]`);
+
+                    if (navBtn) {
+                        const clone = navBtn.cloneNode(true);
+                        clone.onclick = () => {
+                            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+                        };
+                        searchResults.appendChild(clone);
+                    }
+                }
+            });
+
+            if (!searchResults.innerHTML) {
+                searchResults.innerHTML = `<div style="color:#777;">검색 결과 없음</div>`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
