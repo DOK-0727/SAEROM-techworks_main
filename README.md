@@ -52,13 +52,13 @@
 <h3>튜토리얼</h3>
 <img src="explain_img/Element/tutorial.png">
 <p>
-    <img src="explain_img/Element/tutorial/TechWorks.png" height="100px;">
-    <img src="explain_img/Element/tutorial/Google_Sites.png" height="100px;">
-    <img src="explain_img/Element/tutorial/Google_Apps_Script.png" height="100px;">
-    <img src="explain_img/Element/tutorial/Google_AppSheet.png" height="100px;">
-    <img src="explain_img/Element/tutorial/Google_Drive.png" height="100px;">
-    <img src="explain_img/Element/tutorial/Google_Sheets.png" height="100px;">
-    <img src="explain_img/Element/tutorial/Google_Docs.png" height="100px;">
+    <img src="explain_img/Element/tutorial/TechWorks.png" height="150px;">
+    <img src="explain_img/Element/tutorial/Google_Sites.png" height="150px;">
+    <img src="explain_img/Element/tutorial/Google_Apps_Script.png" height="150px;">
+    <img src="explain_img/Element/tutorial/Google_AppSheet.png" height="150px;">
+    <img src="explain_img/Element/tutorial/Google_Drive.png" height="150px;">
+    <img src="explain_img/Element/tutorial/Google_Sheets.png" height="150px;">
+    <img src="explain_img/Element/tutorial/Google_Docs.png" height="150px;">
 </p>
 <p></p>
 <p>
