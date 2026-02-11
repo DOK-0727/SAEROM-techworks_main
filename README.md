@@ -6,8 +6,10 @@
 
 <h2>Element</h2>
 <h3>프로필</h3>
-<img src="explain_img/Element/profile.png" height="100px;">
-<img src="explain_img/Element/profile_click.png" height="100px;">
+<p>
+    <img src="explain_img/Element/profile.png" height="200px;">
+    <img src="explain_img/Element/profile_click.png" height="200px;">
+</p>
 <p></p>
 <p>
     <img src="explain_img/My_Tech/HTML.jpeg" height="12px;">HTML
