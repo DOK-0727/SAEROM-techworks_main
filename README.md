@@ -12,44 +12,44 @@
 </p>
 <p>이 요소는 동아리원들이 동아리 권한 체계를 인지할 수 있도록 프로필 기능을 제공합니다.</p>
 <p>
-    <img src="image/My_Tech/HTML.jpeg" height="12px;">HTML
-    <img src="image/My_Tech/CSS.jpeg" height="12px;">CSS
-    <img src="image/My_Tech/JavaScript.jpeg" height="12px;">JavaScript
+    <img src="image/Tech/HTML.jpeg" height="12px;">HTML
+    <img src="image/Tech/CSS.jpeg" height="12px;">CSS
+    <img src="image/Tech/JavaScript.jpeg" height="12px;">JavaScript
     <br>
-    <img src="image/My_Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
+    <img src="image/Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
 </P>
 
 <h3>웹 런처</h3>
 <img src="image/Element/web_launcher.png">
 <p>이 요소는 동아리원들이 자주 사용하는 웹 서비스를 빠르게 실행할 수 있도록 아이콘 기반의 웹 바로가기 기능을 제공합니다.</p>
 <p>
-    <img src="image/My_Tech/HTML.jpeg" height="12px;">HTML
-    <img src="image/My_Tech/CSS.jpeg" height="12px;">CSS
+    <img src="image/Tech/HTML.jpeg" height="12px;">HTML
+    <img src="image/Tech/CSS.jpeg" height="12px;">CSS
     <br>
-    <img src="image/My_Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
+    <img src="image/Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
 </P>
 
 <h3>문서 생성기</h3>
 <img src="image/Element/document_generator.png">
 <p>이 요소는 동아리원들이 프로젝트를 진행하면서 프로젝트 문서를 쉽게 생성할 수 있도록 문서 생성 기능을 제공합니다.</p>
 <p>
-    <img src="image/My_Tech/HTML.jpeg" height="12px;">HTML
-    <img src="image/My_Tech/CSS.jpeg" height="12px;">CSS
-    <img src="image/My_Tech/JavaScript.jpeg" height="12px;">JavaScript
+    <img src="image/Tech/HTML.jpeg" height="12px;">HTML
+    <img src="image/Tech/CSS.jpeg" height="12px;">CSS
+    <img src="image/Tech/JavaScript.jpeg" height="12px;">JavaScript
     <br>
-    <img src="image/My_Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
+    <img src="image/Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
 </P>
 
 <h3>레퍼런스</h3>
 <img src="image/Element/reference.png">
 <p>이 요소는 동아리원들이 프로젝트를 진행하면서 참고할 수 있도록 레퍼런스 기능을 제공합니다.</p>
 <p>
-    <img src="image/My_Tech/HTML.jpeg" height="12px;">HTML
-    <img src="image/My_Tech/CSS.jpeg" height="12px;">CSS
-    <img src="image/My_Tech/JavaScript.jpeg" height="12px;">JavaScript
+    <img src="image/Tech/HTML.jpeg" height="12px;">HTML
+    <img src="image/Tech/CSS.jpeg" height="12px;">CSS
+    <img src="image/Tech/JavaScript.jpeg" height="12px;">JavaScript
     <br>
-    <img src="image/My_Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
-    <img src="image/My_Tool/Google_Sheets.jpeg" height="12px;">Google Sheets
+    <img src="image/Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
+    <img src="image/Tool/Google_Sheets.jpeg" height="12px;">Google Sheets
 </P>
 
 <h3>튜토리얼</h3>
@@ -65,21 +65,21 @@
 </p>
 <p>이 요소는 동아리원들이 개발에 필요한 기초 지식을 학습할 수 있도록 튜토리얼 기능을 제공합니다.</p>
 <p>
-    <img src="image/My_Tech/HTML.jpeg" height="12px;">HTML
-    <img src="image/My_Tech/CSS.jpeg" height="12px;">CSS
-    <img src="image/My_Tech/JavaScript.jpeg" height="12px;">JavaScript
+    <img src="image/Tech/HTML.jpeg" height="12px;">HTML
+    <img src="image/Tech/CSS.jpeg" height="12px;">CSS
+    <img src="image/Tech/JavaScript.jpeg" height="12px;">JavaScript
     <br>
-    <img src="image/My_Tool/Google_Sites.jpeg" height="12px;">Google Sites
-    <img src="image/My_Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
-    <img src="image/My_Tool/Google_Sheets.jpeg" height="12px;">Google Sheets
+    <img src="image/Tool/Google_Sites.jpeg" height="12px;">Google Sites
+    <img src="image/Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
+    <img src="image/Tool/Google_Sheets.jpeg" height="12px;">Google Sheets
 </P>
 
 <h3>규범</h3>
 <img src="image/Element/rule.png">
 <p>이 요소는 동아리원들이 동아리 규범 체계를 인지할 수 있도록 규범 기능을 제공합니다.</p>
 <p>
-    <img src="image/My_Tech/HTML.jpeg" height="12px;">HTML
-    <img src="image/My_Tech/CSS.jpeg" height="12px;">CSS
+    <img src="image/Tech/HTML.jpeg" height="12px;">HTML
+    <img src="image/Tech/CSS.jpeg" height="12px;">CSS
     <br>
-    <img src="image/My_Tool/Google_Sites.jpeg" height="12px;">Google Sites
+    <img src="image/Tool/Google_Sites.jpeg" height="12px;">Google Sites
 </P>
