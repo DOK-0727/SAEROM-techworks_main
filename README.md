@@ -143,7 +143,7 @@
 <summary><b>레퍼런스</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/reference.png">
+  <img src="image/Element/reference.png" width="550">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
