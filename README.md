@@ -95,7 +95,7 @@
 <summary><b>프로필</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/profile.png">
+  <img src="image/Element/profile.png" width="150">
   <img src="image/Element/profile_click.png">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
