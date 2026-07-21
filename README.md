@@ -96,7 +96,7 @@
 <br>
 <p align="center">
   <img src="image/Element/profile.png" width="150">
-  <img src="image/Element/profile_click.png">
+  <img src="image/Element/profile_click.png" width="300">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
