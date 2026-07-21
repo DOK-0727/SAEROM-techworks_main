@@ -26,6 +26,7 @@
 ---
 
 ## 소개
+
 <table>
 <tr>
 <th>항목</th>
@@ -84,6 +85,7 @@
 ---
 
 ## 구조
+
 <p align="center">
   <img src="image/structure_diagram.png" usemap="#structure-map" alt="Project Structure">
 </p>
@@ -91,12 +93,13 @@
 ---
 
 ## 기능
+
 <details>
 <summary><b>프로필</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/profile.png" width="150">
-  <img src="image/Element/profile_click.png" width="300">
+  <img src="image/Element/profile.png">
+  <img src="image/Element/profile_click.png">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
@@ -112,14 +115,14 @@
 <summary><b>웹 런처</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/web_launcher.png" width="600">
+  <img src="image/Element/web_launcher.png">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
   <br>
   <img src="image/Tool/Google_Sites.jpeg" height="12px;">Google Sites
   <br>
-  이 요소는 동아리원들이 자주 사용하는 웹 사이트에 쉽게 접근할 수 있도록 웹 런처 기능을 제공합니다.
+  이 요소는 동아리원들이 자주 사용하는 웹 서비스를 빠르게 실행할 수 있도록 아이콘 기반의 웹 바로가기 기능을 제공합니다.
 </p>
 </details>
 
@@ -127,7 +130,7 @@
 <summary><b>문서 생성기</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/document_generator.png" width="150">
+  <img src="image/Element/document_generator.png">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
@@ -135,7 +138,7 @@
   <br>
   <img src="image/Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
   <br>
-  이 요소는 동아리원들이 프로젝트를 진행하면서 프로젝트 문서를 쉽게 생성할 수 있도록 문서 생성기 기능을 제공합니다.
+  이 요소는 동아리원들이 프로젝트를 진행하면서 프로젝트 문서를 쉽게 생성할 수 있도록 문서 생성 기능을 제공합니다.
 </p>
 </details>
 
@@ -143,7 +146,7 @@
 <summary><b>레퍼런스</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/reference.png" width="550">
+  <img src="image/Element/reference.png">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
@@ -199,9 +202,15 @@
 ---
 
 ## 기여
+
+이 프로젝트는 TechWorks가 개발, 유지보수 하는 프로젝트입니다.
+<br>
 한도경, 이율, 강민서, 이동하
 
 ---
 
 ## 라이선스
+
 Copyright © 2025 SAEROM HIGH SCHOOL All rights reserved.
+<br>
+본 프로젝트의 소스 코드, 디자인, 이미지 및 관련 에셋에 대한 모든 권리는 새롬고등학교에 있습니다.
