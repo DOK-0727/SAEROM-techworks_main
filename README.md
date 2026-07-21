@@ -127,7 +127,7 @@
 <summary><b>문서 생성기</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/document_generator.png">
+  <img src="image/Element/document_generator.png" width="150">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
