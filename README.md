@@ -111,7 +111,7 @@
 <details>
 <summary><b>웹 런처</b></summary>
 <br>
-<p align="center" width="900px">
+<p align="center" width="100px">
   <img src="image/Element/web_launcher.png">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
