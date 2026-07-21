@@ -26,7 +26,6 @@
 ---
 
 ## 소개
-
 <table>
 <tr>
 <th>항목</th>
@@ -85,7 +84,6 @@
 ---
 
 ## 구조
-
 <p align="center">
   <img src="image/structure_diagram.png" usemap="#structure-map" alt="Project Structure">
 </p>
@@ -93,7 +91,6 @@
 ---
 
 ## 기능
-
 <details>
 <summary><b>프로필</b></summary>
 <br>
@@ -122,7 +119,7 @@
   <br>
   <img src="image/Tool/Google_Sites.jpeg" height="12px;">Google Sites
   <br>
-  이 요소는 동아리원들이 자주 사용하는 웹 서비스를 빠르게 실행할 수 있도록 아이콘 기반의 웹 바로가기 기능을 제공합니다.
+  이 요소는 동아리원들이 자주 사용하는 웹 사이트에 쉽게 접근할 수 있도록 웹 런처 기능을 제공합니다.
 </p>
 </details>
 
@@ -138,7 +135,7 @@
   <br>
   <img src="image/Tool/Google_Apps_Script.jpeg" height="12px;">Google Apps Script
   <br>
-  이 요소는 동아리원들이 프로젝트를 진행하면서 프로젝트 문서를 쉽게 생성할 수 있도록 문서 생성 기능을 제공합니다.
+  이 요소는 동아리원들이 프로젝트를 진행하면서 프로젝트 문서를 쉽게 생성할 수 있도록 문서 생성기 기능을 제공합니다.
 </p>
 </details>
 
