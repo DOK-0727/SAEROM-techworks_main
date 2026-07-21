@@ -112,7 +112,7 @@
 <summary><b>웹 런처</b></summary>
 <br>
 <p align="center">
-  <img src="image/Element/web_launcher.png" width="700">
+  <img src="image/Element/web_launcher.png" width="650">
   <br>
   <img src="image/Tech/HTML.jpeg" height="12px;">HTML
   <img src="image/Tech/CSS.jpeg" height="12px;">CSS
